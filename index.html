@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <style>
       	body{
-      		font-family: Monaco, monospace ;
+      		font-family: Monaco, monospace;
       		}
 
       	kbd,p{
@@ -25,45 +25,53 @@
 </head>
 
 <body class="bg-info text-light">
-<br><br>
-    
-<div class="container">
-
-    <center>
-    <img src="https://media1.giphy.com/media/xUPJPxclMUYoJYZKp2/giphy.gif?cid=6c09b952qybozzrbldgsxact9486pz33ed5gdi8e5ap0nrhe&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
     <br><br>
+        
+    <div class="container">
 
-    <div class="col-md-12">
-        <h2>Click the buttons below to convert</h2>
-        <kbd id="amount"></kbd>
-        <h2>Philippine Pesos to other currencies</h2>
-    </div>
+        <center>
+        <img src="https://media1.giphy.com/media/xUPJPxclMUYoJYZKp2/giphy.gif?cid=6c09b952qybozzrbldgsxact9486pz33ed5gdi8e5ap0nrhe&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+        <br><br>
 
-    <script>
-        var php = 1000; // given value in peso
-        document.getElementById("amount").textContent = php; // Dynamically set the value inside <kbd>
-    </script>
-
-    </center>
-
-
-    <br>
-
-    <center>     
         <div class="col-md-12">
-            <p id="display"></p>
-            <br>
-            <button type="button" class="btn btn-white" onclick="var php = 1000; var $sgDollar=41.16; document.getElementById('display').innerHTML= '<kbd>' + php/$sgDollar + '</kbd>';">Singapore Dollar</button>
-            
-            <button type="button" class="btn btn-danger" onclick="var php = 1000; var $hkDollar=7.49; document.getElementById('display').innerHTML= '<kbd>' + php/$hkDollar + '</kbd>';">Hong Kong Dollar</button>
-
-            <button type="button" class="btn btn-primary" onclick="var php = 1000; var $ausDollar=36.82; document.getElementById('display').innerHTML= '<kbd>' + php/$ausDollar + '</kbd>';">Australian Dollar</button>
-
-            <button type="button" class="btn btn-dark" onclick="var php = 1000; var qaRiyal=16.02; document.getElementById('display').innerHTML= '<kbd>' + php/qaRiyal + '</kbd>';">Qatari Riyal</button>
-
+            <h2>Click the buttons below to convert</h2>
+            <kbd id="amount"></kbd>
+            <h2>Philippine Pesos (Php) to other currencies</h2>
         </div>
-    </center>
-</div>
+
+        <script>
+            var php = 1000; // given value in peso
+            document.getElementById("amount").textContent = php; // Dynamically set the value inside <kbd>
+        </script>
+
+        </center>
+
+
+        <br>
+
+        <center>     
+            <div class="col-md-12">
+                <p id="display"></p>
+                <br>
+                <button 
+                    type="button" class="btn btn-white" onclick="var php = 1000; var $sgDollar=41.16; document.getElementById('display').innerHTML= '<kbd>' + php/$sgDollar + '</kbd>';">Singapore Dollar (S$)
+                </button>
+                
+                <button 
+                    type="button" class="btn btn-danger" onclick="var php = 1000; var $hkDollar=7.49; document.getElementById('display').innerHTML= '<kbd>' + php/$hkDollar + '</kbd>';">Hong Kong Dollar (HK$)
+                </button>
+
+                <button 
+                    type="button" class="btn btn-primary" onclick="var php = 1000; var $ausDollar=36.82; document.getElementById('display').innerHTML= '<kbd>' + php/$ausDollar + '</kbd>';">Australian Dollar (AU$)
+                </button>
+
+                <button 
+                    type="button" class="btn btn-dark" onclick="var php = 1000; var qaRiyal=16.02; document.getElementById('display').innerHTML= '<kbd>' + php/qaRiyal + '</kbd>';">Qatari Riyal (QAR)
+                </button>
+
+            </div>
+        </center>
+    </div>
 
     <br>
 
@@ -71,7 +79,7 @@
         <div class="col-md-12">
             <a href="index.html"><button class="btn btn-warning btn-lg">Refresh</button></a>
        	</div>
-   </center>
+    </center>
 
    
 
